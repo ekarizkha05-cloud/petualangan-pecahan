@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petualangan Pecahan - Kelas VI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <div class="emoji">🧩🍕📚</div>
+      <h1>Petualangan Pecahan!</h1>
+      <p>
+        Game Literasi dan Numerasi Matematika<br>
+        <b>Kelas VI Sekolah Dasar</b>
+      </p>
+    </header>
+
+    <!-- Game Section -->
+    <section class="card" id="game">
+      <div class="stats">
+        <span class="pill" id="number">Soal 1 dari 10</span>
+        <span class="pill">⭐ Skor: <span id="score">0</span></span>
+      </div>
+      <div class="progress">
+        <div id="bar"></div>
+      </div>
+      <p id="category" style="color: #7c3aed; font-weight: bold">📖 Literasi</p>
+      <h2 id="title"></h2>
+      <div class="story" id="story"></div>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+      <button class="main hidden" id="next" onclick="nextQuestion()">
+        Soal Berikutnya ➜
+      </button>
+    </section>
+
+    <!-- Result Section -->
+    <section class="card center hidden" id="result" aria-live="polite">
+      <div class="emoji">🏆</div>
+      <h2>Petualangan Selesai!</h2>
+      <p id="finalScore" style="font-size: 30px; font-weight: bold; color: #7c3aed"></p>
+      <p id="message"></p>
+      <p id="details"></p>
+      <button class="main" onclick="restart()">🔄 Main Lagi</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      Belajar pecahan jadi menyenangkan! 🌟<br>
+      Dibuat untuk kegiatan pembelajaran kelas VI.
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
